@@ -23,7 +23,7 @@ export default function KanbanBoard() {
   const [newBoardName, setNewBoardName] = useState('');
   const [newTask, setNewTask] = useState({ title: '', description: '' });
 
-  const API_URL = 'http://localhost:8001';
+  const API_URL = 'https://kanban-board-backend-three.vercel.app/';
 
   useEffect(() => {
     fetchBoards();
